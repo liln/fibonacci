@@ -16,8 +16,12 @@ Since the first solution can be very slow, a solution that continues to sum the 
 fibonacci2(234) # return value 3577855662560905981638959513147239988861837901112
 ```
 
-The third solution, in `fibonacci3.rb`, uses the concept of memoization to speed up the computation for the Fibonacci number. Values that have already been calculated will not be calculated again. The class `Fibonacci` is initialized with a hash containing the 0th and 1st numbers of the sequence. Then you can `getfib(num)` to obtain the Fibonacci values, where the method will look in the hash for values that have already been computed or otherwise save the values calcuated into the hash as it does it. This solution wouldn't be ideal if memory was an issue, but for cases where Fibonacci numbers are repeatly requested, a look-up table would be the fastest.
+The third solution, in `fibonacci3.rb`, uses the concept of memoization to speed up the computation for the Fibonacci number. Values that have already been calculated will not be calculated again. The class `Fibonacci` is initialized with a hash containing the 0th and 1st numbers of the sequence. Then you can `getfib(num)` to obtain the Fibonacci values, where the method will look in the hash for values that have already been computed or otherwise save the values calculated into the hash as it does it. This solution wouldn't be ideal if memory was an issue, but for cases where Fibonacci numbers are repeatly requested, a look-up table would be the fastest.
 
 ```
 f.getfib(234) # return value 3577855662560905981638959513147239988861837901112
 ```
+
+## License
+
+MIT: [http://lng.mit-license.org](http://lng.mit-license.org)
